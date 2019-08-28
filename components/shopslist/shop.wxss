@@ -1,0 +1,59 @@
+/* components/shopslist/shop.wxss */
+.catgrouy-max-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top:10rpx;
+  
+}
+
+.catgrouy-image-box {
+  background-color: rgb(255, 255, 255);
+    width: 47%;
+    height: 310rpx;
+    margin:10rpx;
+    border:1px solid #eee;
+}
+
+.catgrouy-image {
+    width: 100%;
+    height: 69%;
+}
+
+.catgrouy-image>image {
+    width: 100%;
+    height: 100%;
+}
+.catgrouy-piarc-box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+}
+.catgrouy-title{
+  font-size: 32rpx;
+  color: black;
+}
+.img-piarc-text{
+  width: 70rpx;
+  height: 32rpx;
+  border:1px solid black;
+  margin-right: 10rpx;
+  font-size: 22rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 32rpx;
+  color:rgb(147, 168, 172);
+}
+.img-piarc{
+   color:rgb(147, 168, 172);
+     font-size: 22rpx;
+}
+image{
+	transition: all .3s ease;
+	opacity: 0;
+}
+.active{
+	opacity: 1;
+}

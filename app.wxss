@@ -1,0 +1,15 @@
+/**app.wxss**/
+/* @import "__wuBaseWxss__/3.wxss"; */
+
+@import "__wuBaseWxss__/2.wxss";
+
+
+page {
+    background: #F6F6F6;
+    font-size: 28rpx;
+    color: #666;
+    line-height: 1.5;
+    position: relative;
+    min-height: 100%;
+    box-sizing: border-box;
+}

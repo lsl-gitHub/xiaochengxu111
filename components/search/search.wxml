@@ -1,0 +1,8 @@
+<!--components/search/search.wxml-->
+
+<view class="input-wrapper ">
+    <view class="search-box iconfont icon-search--line" >
+      <!-- mpvue中可以使用原生小程序组件，下面使用icon组件 -->
+<input type="text" placeholder="搜索分类和店铺"></input>
+    </view>
+  </view>

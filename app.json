@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "junbao_pages/index/index",
+    "junbao_pages/user/user",
+    "junbao_pages/cat/cat",
+    "junbao_pages/catgrary/catgrary",
+    "junbao_pages/store/store",
+    "components/shopslist/shop",
+    "components/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ad9f98",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "subPackages": [
+    {
+      "root": "junbao_page_client_shop/",
+      "pages": [
+        "index/ind101",
+        "index/ind102",
+        "index/ind103"
+      ]
+    },
+    {
+      "root": "junbao_page_client_user/",
+      "pages": [
+        "user/us101",
+        "user/us102",
+        "user/us103"
+      ]
+    }
+  ],
+  "tabBar": {
+    "color": "#e0e0e0",
+    "selectedColor": "#ff0000",
+    "backgroundColor": "#cccccc",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "junbao_pages/index/index",
+        "text": "首页",
+        "iconPath": "junbao_pages/images/User select.png",
+        "selectedIconPath": "junbao_pages/images/User select(1).png"
+      },
+      {
+        "pagePath": "junbao_pages/catgrary/catgrary",
+        "text": "分类",
+        "iconPath": "junbao_pages/images/User select.png",
+        "selectedIconPath": "junbao_pages/images/User select(1).png"
+      },
+      {
+        "pagePath": "junbao_pages/cat/cat",
+        "text": "购物车",
+        "iconPath": "junbao_pages/images/User select.png",
+        "selectedIconPath": "junbao_pages/images/User select(1).png"
+      },
+      {
+        "pagePath": "junbao_pages/user/user",
+        "text": "我的",
+        "iconPath": "junbao_pages/images/User select.png",
+        "selectedIconPath": "junbao_pages/images/User select(1).png"
+      },
+      {
+        "pagePath": "junbao_pages/store/store",
+        "text": "门店",
+        "iconPath": "junbao_pages/images/User select.png",
+        "selectedIconPath": "junbao_pages/images/User select(1).png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

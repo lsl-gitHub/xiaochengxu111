@@ -1,0 +1,144 @@
+<!--junbao_pages/index/index.wxml-->
+<view>
+<swiper class='u-wrp-bnr' indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+  <block wx:for="{{bnrUrl}}" wx:for-index="index">
+    <swiper-item>
+      <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="icon-text-box">
+<view class="icon-box" wx:for="{{6}}">
+<view class="icon-images"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image></view>
+<view class="icon-text">所有产品</view>
+</view>
+
+<shop  id="shop"
+       bind:signEvent="signEvent" 
+ ></shop>
+
+
+</view>
+<view class="title-box">
+<view class="title-box-text">推荐专区</view> 
+<view class="title-box-kong"></view>   
+</view> 
+<view  class="swiper2-box">
+<swiper class='u-wrp-bnr u-wrp-bnr2' indicator-color="rgba(0,0,0,0)" indicator-active-color="rgba(0,0,0,0)" indicator-dots='false' autoplay='false' interval='50000000'  next-margin="140rpx">
+  <block wx:for="{{bnrUrl}}" wx:for-index="index">
+    <swiper-item style="width:50%">
+      <image src='{{item.url}}' class='u-img-slide' mode='aspectFill' style="width:98%"></image>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<view class="title-box title-box2">
+<view class="title-box-text">品牌名店</view> 
+<view class="title-box-kong"></view>   
+</view> 
+<!--logs.wxml-->
+<view>
+<view class="hide{{showView?'show':''}} mode-box">
+<!-- 导航栏开始 -->
+<!-- <view class="swiper-tab"> -->
+  <!-- <view wx:for="{{tabs}}" wx:key class="swiper-tab-item {{curIdx===index? 'active3':''}}" data-current="{{index}}" catchtap="clickTab">
+    <text>{{item}}</text>
+   </view>
+   <view class="viewxian {{curIdx? 'active1':'active'}}"></view> -->
+<!-- </view> -->
+<!-- 内容开始 -->
+<swiper class="swiper_content" v-if="index" current="{{curIdx}}"   bindchange="swiperTab" style='height:500rpx;margin:0 30rpx; bacground-color:#fff;'>
+  <!-- 第一个 -->
+  <swiper-item >
+
+    <view class="scroll-y"  bindscrolltolower="onReachBottom">
+     <view class="title-box title-box2">
+<view class=" title-box-text2">名店1</view> 
+<view class="title-box-kong"></view>   
+</view> 
+<view class="img-store1">
+<view class="img-store1-left" hover-class="transform: rotateY(-180deg);"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg" hover-class="transform: rotateY(-180deg);"></image ></view>
+<view class="img-store1-right">
+<view class="img-store1-right-img1"  ><image  wx:for="{{imagelist}}" src="{{item.img}}" bindtap="imagelist" class='{{idx===index? "one" : ""}}' id="{{index}}"></image ></view>
+<view class="img-store1-right-img2"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image ></view>
+</view>
+</view>
+</view>
+  </swiper-item>
+   <!-- 第er个 -->
+  <swiper-item >
+    <view  bindscrolltolower="onReachBottom">
+ <view class="title-box title-box2">
+<view class=" title-box-text2">名店2</view> 
+<view class="title-box-kong"></view>   
+</view> 
+
+<view class="img-store1">
+
+
+<view class="img-store1-right">
+<view class="img-store1-right-img1"  ><image  wx:for="{{imagelist}}" src="{{item.img}}" bindtap="imagelist" class='{{idx===index? "one" : ""}}' id="{{index}}"></image ></view>
+<view class="img-store1-right-img2"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image ></view>
+</view>
+
+<view class="img-store1-left" ><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg" hover-class="transform: rotateY(-180deg);"></image ></view>
+</view>
+</view>
+  </swiper-item>
+   <!-- 第san个 -->
+    <swiper-item >
+    <view  bindscrolltolower="onReachBottom">
+ <view class="title-box title-box2">
+<view class=" title-box-text2">名店3</view> 
+<view class="title-box-kong"></view>   
+</view> 
+<view class="img-store1">
+<view class="img-store1-left" hover-class="transform: rotateY(-180deg);"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg" hover-class="transform: rotateY(-180deg);"></image ></view>
+<view class="img-store1-right">
+<view class="img-store1-right-img1"  ><image  wx:for="{{imagelist}}" src="{{item.img}}" bindtap="imagelist" class='{{idx===index? "one" : ""}}' id="{{index}}"></image ></view>
+<view class="img-store1-right-img2"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image ></view>
+</view>
+</view>
+</view>
+  </swiper-item>
+
+</swiper>
+</view>
+</view>
+
+
+
+
+<view class="title-box title-box2">
+<view class="title-box-text">热销产品</view> 
+<view class="title-box-kong"></view>   
+</view> 
+
+<view class="catgrouy-max-box">
+<view class="catgrouy-image-box"  wx:for="{{6}}" bindtap="signEvent">
+<view class="catgrouy-image"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image></view>   
+<view class="catgrouy-title">床垫全棉床垫床褥1.8m双</view>  
+<view class="catgrouy-piarc-box">
+<view class="img-piarc">￥158</view> <view class="img-piarc-text">购买</view>      
+</view>  
+</view>   
+</view>   
+ 
+ <view class="footrer">
+ <view class="footrer-text">技术支持:小程序科技</view>
+ </view>
+<!-- 广告1 -->
+ <view class="advertisement1" wx-if="{{advertisement1}}">
+ <image src="../images/index/Snipaste_2019-08-27_15-08-52.png"></image>
+ <view class="advertisement1-text">跳过(<text class="advertisement1-text-num">{{num}}</text>)</view>
+ </view>
+ <!-- 广告2 -->
+ <view class="advertisement2" wx-if="{{advertisement2}}">
+ <view class="advertisement2-image-box"><image src="../images/index/Snipaste_2019-08-27_15-25-12.png"></image></view>
+ <view class="advertisement2-X"><image src="../resource/img/c.png" bindtap="clearxx"></image></view>
+ </view>
+  
+
+
+

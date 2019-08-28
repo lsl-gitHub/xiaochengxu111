@@ -1,0 +1,29 @@
+<!--junbao_pages/components/tabbar/tabbar.wxml-->
+
+ <view>
+  <search></search>
+<view class="category-body">
+      <view class="body-left">
+        <view class="body-left-item {{currentIndex === index ? 'active' : ''}}" wx:for="{{20}}" id="{{index}}"  bindtap="handleLeftClick">字画、古籍</view>
+      </view>
+      <scroll-view bindscroll="scroll" scroll-y scroll-into-view="a1">
+      <view class="body-right">
+        <view class="body-right-item" wx:for="{{9}}" id="{{index}}">
+          <view class="right-item-title">家居、木器</view>
+
+          <view class="right-item-list"  >
+            <view class="right-item-brand" wx:for="{{9}}" id="{{index}}">
+              <!-- 通过navigator跳转 -->
+              <navigator :url="'/pages/search-list/main?query='+subitem.cat_name">
+                <image class="brand-image" src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg" mode="aspectFill"></image>
+                <p class="brand-title">瓷器</p>
+              </navigator>
+            </view>
+             </view>
+       
+        </view>
+      </view>
+        </scroll-view>
+    </view>
+     
+  </view>

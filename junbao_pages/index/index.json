@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+      "shop": "../../components/shopslist/shop"
+  },
+    "navigationBarTitleText": "首页"
+    
+}

@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.0",
+	"appid": "wx9b33da6f3bb7d882",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8FB2C%E5%B9%B3%E5%8F%B0",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "junbao_pages/user/user",
+					"pathName": "junbao_pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/shopslist/shop",
+					"pathName": "components/shopslist/shop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "junbao_pages/catgrary/catgrary",
+					"pathName": "junbao_pages/catgrary/catgrary",
+					"scene": null
+				}
+			]
+		}
+	}
+}

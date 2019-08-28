@@ -1,0 +1,40 @@
+<!--components/shopslist/shop.wxml-->
+<!-- <view class="catgrouy-max-box">
+<view class="catgrouy-image-box"  wx:for="{{list}}">
+<view class="catgrouy-image"><image src="http://k.zol-img.com.cn/dcbbs/22000/a21999018_01000.jpg"></image></view>   
+<view class="catgrouy-title">床垫全棉床垫床褥1.8m双</view>  
+<view class="catgrouy-piarc-box">
+<view class="img-piarc">￥158</view> <view class="img-piarc-text">购买</view>      
+</view>  
+</view>   
+</view>   -->
+<view class="catgrouy-max-box">
+<view class="catgrouy-image-box item-{{index}}"  wx:for="{{group}}" wx:key="*this.src">
+<view class="catgrouy-image"><image src='{{item.show? item.src : item.def}}' class='{{item.show? "active" : ""}}'></image></view>   
+<view class="catgrouy-title">床垫全棉床垫床褥1.8m双</view>  
+<view class="catgrouy-piarc-box">
+<view class="img-piarc">￥158</view> <view class="img-piarc-text">购买</view>      
+</view>  
+</view>   
+</view>  
+
+<!--index.wxml-->
+<!-- <view class="girls-list-wrap">
+  <view class='girls-list clearfix' id="J_GirlsList">
+    <view class='item item-{{index}}' wx:for="{{group}}" wx:key="*this.src">
+      <view class='a'>
+        <view class='item-wrap'>
+          <view class='img'>
+            <image src='{{item.show? item.src : item.def}}' class='{{item.show? "active" : ""}}'></image>
+          </view>
+          <view class='info'>
+            <view class="info">
+              <text class="name">朱琳</text>
+              <text class="city">杭州市</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->

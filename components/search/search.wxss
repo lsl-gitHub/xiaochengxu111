@@ -1,0 +1,22 @@
+/* components/search/search.wxss */
+@import "../../__wuBaseWxss__/3.wxss";
+.input-wrapper {
+  padding: 20rpx;
+background-color: rgb(238, 238, 238)
+  }
+
+.search-box {
+    background-color: #fff;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 10rpx;
+    align-items: center;
+    font-size: 16px;
+    height: 60rpx;
+    border-radius: 4px;
+    color: #cecece;
+    text-indent: 10rpx;
+    }
+     icon {
+      margin-right: 4px;
+    }
